@@ -13,14 +13,17 @@ jobs:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Installing dependencies
+        run: npm ci
+
       - name: Lint code
-        run: npm run lint
+        run: npm lint
 
       - name: Test code
-        run: npm run test
+        run: npm test
 
       - name: Build code
-        run: npm run build
+        run: npm build
 
       - name: Deploy code
         run: echo "Deploying code"
