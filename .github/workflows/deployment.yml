@@ -1,0 +1,26 @@
+name: Test, Build and Deploy project
+on: [push]
+jobs:
+  Deploy-Porject:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Add node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Lint code
+        run: npm run lint
+
+      - name: Test code
+        run: npm run test
+
+      - name: Build code
+        run: npm run build
+
+      - name: Deploy code
+        run: echo "Deploying code"
