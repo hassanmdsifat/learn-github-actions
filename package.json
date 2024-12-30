@@ -28,6 +28,7 @@
     "jsdom": "^20.0.0",
     "vite": "^3.0.7",
     "vite-plugin-eslint": "^1.8.1",
-    "vitest": "^0.22.1"
+    "vitest": "^0.22.1",
+    "@vitest/ui": "^0.34.0"
   }
 }
