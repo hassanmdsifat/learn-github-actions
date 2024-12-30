@@ -1,7 +1,10 @@
 name: Test, Build and Deploy project
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
-  Deploy-Porject:
+  deploy-project:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
