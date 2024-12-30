@@ -1,7 +1,7 @@
 name: Test, Build and Deploy project
 on: [push]
 jobs:
-  Deploy-Porject:
+  deploy-project:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
