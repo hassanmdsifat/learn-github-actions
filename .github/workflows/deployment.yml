@@ -1,5 +1,8 @@
 name: Test, Build and Deploy project
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   deploy-project:
     runs-on: ubuntu-latest

@@ -3,7 +3,8 @@ on:
   pull_request:
     types:
       - opened
-      - edited
+    branches:
+      - dev
   workflow_dispatch:
 jobs:
   test-project:
